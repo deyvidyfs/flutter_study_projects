@@ -37,10 +37,10 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter App'),
+        title: Text('Personal Expenses'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
@@ -48,6 +48,26 @@ class MyHomePage extends StatelessWidget {
             child: Card(
               child: Text('CHART!'),
               elevation: 5,
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: <Widget>[
+                TextField(
+                  decoration: InputDecoration(labelText: 'Title'),
+                ),
+                TextField(
+                  decoration: InputDecoration(labelText: 'Amount'),
+                ),
+                FlatButton(
+                  onPressed: () {},
+                  textColor: Colors.orange,
+                  child: Text('Add Transaction',
+                  ),
+                ),
+              ],
             ),
           ),
           Column(
