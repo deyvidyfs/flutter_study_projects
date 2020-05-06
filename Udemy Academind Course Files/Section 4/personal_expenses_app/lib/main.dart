@@ -62,16 +62,18 @@ class MyHomePage extends StatelessWidget {
                       ),
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.purple,
+                          color: Colors.orange,
                           width: 2,
                         ),
+                        color: Colors.orange,
+                        borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
                         transaction.amount.toString(),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
-                          color: Colors.purple,
+                          color: Colors.white,
                         ),
                       ),
                     ),
