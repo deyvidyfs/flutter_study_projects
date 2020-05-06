@@ -69,7 +69,7 @@ class MyHomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
-                        transaction.amount.toString(),
+                        '\$ ${transaction.amount}',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
